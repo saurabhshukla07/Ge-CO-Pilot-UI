@@ -522,50 +522,146 @@
   width: 100%;
   background: white;
   color: #000000;
+ 
+
 
   .inner {
+ 
     display: flex;
     height: 100%;
     width: 100%;
     flex-direction: column;
     overflow-y: auto;
+    
+   
 
     .suggection {
+    
+      
       height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+    }
+
+      .navbar{
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        font-size: 2rem;
+     
+      }
+     .wrapper{
+      color: white;
+      background: #000000;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   
+     }
+   .login-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    padding: 90px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+
+    // width: 30vw;
+    // height: 70vh;
+   }
+   .dark-login-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  //  border: 2px solid white;
+    padding: 90px 20px;
+    box-shadow: 0 4px 8px 0 rgba(234, 233, 233, 0.922), 0 6px 20px 0 rgba(234, 233, 233, 0.922);
+  text-align: center;
+
+    // width: 30vw;
+    // height: 70vh;
+   }   
+
+     
 
       svg {
         margin-bottom: 0.5rem;
       }
+      .logo{
+        
+        width: 150px;
+        height: 150px;
+       margin-bottom: 5rem;
+       
+  
+      }
+      .login-text{
+        font-size: 1rem;
+        
+      
+      
+
+      }
+      .login-text h1{
+margin-bottom: 3rem;
+
+      }
+      .login-text p{
+        margin-bottom: 20px;
+      }
 
       p {
-        text-align: center;
+     
         margin-bottom: 0.5rem;
       }
 
       .btns {
         display: flex;
-        flex-direction: row;
-        gap: 10px;
-        margin-top: 0.5rem;
+        justify-content: center;
+        align-items: center;
+       
+        gap: 2.5vw;
+        margin-top: 1.5rem;
+        .btn-icon{
+          display: flex;
+          justify-content: center;
+          gap: 0.5rem;
+          padding: 0.25rem 0.75rem;
+          margin-top: 5px;
+
+          // align-items: center;
+        }
 
         button {
-          width: 5em;
-          height: 3em;
-          text-align: center;
+         
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          // width: 5em;
+          // height: 3em;
+          // text-align: center;
           background: #191949;
           color: rgba(255, 255, 255, 1);
           border-radius: 0.25rem;
-          border: none;
+          border: 1px solid #191949;
           cursor: pointer;
           transition: all 0.1s ease-in-out;
           -moz-transition: all 0.1s ease-in-out;
 
           &:hover {
-            background: #191949;
+            background:  rgba(255, 255, 255, 1);
+            color: #191949;
+            border: 1px solid #191949;
+          
+          
+            
           }
         }
       }
@@ -597,4 +693,4 @@
       }
     }
   }
-}
+
